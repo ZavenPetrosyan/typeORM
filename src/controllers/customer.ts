@@ -5,7 +5,7 @@ import { Request, Response } from 'express';
 
 
 export class CustomerController implements Controller {
-    public initialie(httpServer: HttpServer): void {
+    public initialize(httpServer: HttpServer): void {
         httpServer.get('customers', this.list.bind(this));
         httpServer.get('customers/:id', this.getById.bind(this));
         httpServer.post('customers', this.create.bind(this));

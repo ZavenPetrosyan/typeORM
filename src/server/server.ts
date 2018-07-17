@@ -35,7 +35,7 @@ export class ApiServer implements HttpServer {
     public start(port: number): void {
         this.app = express();
 
-        CONTROLLERS.forEach(controller => controller.initialie(this));
+        CONTROLLERS.forEach(controller => controller.initialize(this));
         
         this.app.use(bodyParser());
         this.app.listen(8080, async () => console.log(`Application started at port ${port}`));
