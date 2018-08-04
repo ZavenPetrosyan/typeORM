@@ -6,3 +6,4 @@ export class PingControlelr implements Controller {
         httpServer.get('ping', ( req, res ) => res.status(200).send("hello"));
     }
 }
+

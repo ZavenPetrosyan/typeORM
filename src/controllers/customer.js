@@ -25,7 +25,7 @@ class CustomerController {
             //:TODO
         };
     }
-    initialie(httpServer) {
+    initialize(httpServer) {
         httpServer.get('customers', this.list.bind(this));
         httpServer.get('customers/:id', this.getById.bind(this));
         httpServer.post('customers', this.create.bind(this));

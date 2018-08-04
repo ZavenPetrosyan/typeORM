@@ -40,7 +40,7 @@ class ApiServer {
     }
     start(port) {
         this.app = express();
-        controllers_1.CONTROLLERS.forEach(controller => controller.initialie(this));
+        controllers_1.CONTROLLERS.forEach(controller => controller.initialize(this));
         this.app.use(bodyParser());
         this.app.listen(8080, () => __awaiter(this, void 0, void 0, function* () { return console.log(`Application started at port ${port}`); }));
     }

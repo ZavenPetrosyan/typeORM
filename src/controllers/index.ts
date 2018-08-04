@@ -5,3 +5,4 @@ export const CONTROLLERS = [
     new CustomerController(),
     new PingControlelr()
 ]
+
